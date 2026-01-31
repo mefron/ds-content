@@ -15,6 +15,6 @@
 	},
 	"url": "https://github.com/mefron/ds-content",
 	"bugs": "https://github.com/mefron/ds-content/issues",
-	"manifest": "https://github.com/mefron/ds-content/releases/latest/download/module.json",
-	"download": "https://github.com/mefron/ds-content/releases/download/v0.0.0/ds-content-v0.0.0.zip"
+	"manifest": "https://github.com/mefron/ds-content/releases/download/latest/module.json",
+	"download": "https://github.com/mefron/ds-content/releases/download/release/ds-content-v0.0.0.zip"
 }
