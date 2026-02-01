@@ -2,7 +2,7 @@
 	"id": "ds-content",
 	"title": "Draw Steel Content",
 	"description": "Personal Draw Steel Content",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"authors": [{
 		"name": "mefron",
 		"url": ""
@@ -16,5 +16,35 @@
 	"url": "https://github.com/mefron/ds-content",
 	"bugs": "https://github.com/mefron/ds-content/issues",
 	"manifest": "https://github.com/mefron/ds-content/releases/download/latest/module.json",
-	"download": "https://github.com/mefron/ds-content/releases/download/release/ds-content-v0.0.0.zip"
+	"download": "https://github.com/mefron/ds-content/releases/download/release/ds-content-v0.0.1.zip",
+
+	"packs": [
+		{
+			"name": "classes",
+			"label": "Classes",
+			"system": "draw-steel",
+			"path": "./packs/classes",
+			"type": "item",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"TRUSTED": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		}
+	],
+	"packFolders": [
+		{
+			"name": "Classes",
+			"sorting": "a",
+			"packs": ["classes"],
+			"folders": [
+				{
+					"name": "Core",
+					"sorting": "a",
+					"color": "#fefe00",
+					"packs": ["censor"]
+				}
+			]
+		}
+	]
 }
