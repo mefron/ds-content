@@ -2,11 +2,14 @@
 	"id": "ds-content",
 	"title": "Draw Steel Content",
 	"description": "Personal Draw Steel Content",
-	"version": "0.0.0",
-	"authors": [{
-		"name": "mefron",
-		"url": ""
-	}],
+	"version": "0.0.4",
+	"system": ["draw-steel"],
+	"authors": [
+		{
+			"name": "mefron",
+			"url": ""
+		}
+	],
 	"minimumCoreVersion": "0.6.5",
 	"compatibleCoreVersion": "13",
 	"compatibility": {
@@ -16,5 +19,61 @@
 	"url": "https://github.com/mefron/ds-content",
 	"bugs": "https://github.com/mefron/ds-content/issues",
 	"manifest": "https://github.com/mefron/ds-content/releases/download/latest/module.json",
-	"download": "https://github.com/mefron/ds-content/releases/download/release/ds-content-v0.0.0.zip"
+	"download": "https://github.com/mefron/ds-content/releases/download/v0.0.4/ds-content-v0.0.4.zip",
+
+	"packs": [
+		{
+			"name": "dsc-core-rules",
+			"label": "Core Rules",
+			"system": "draw-steel",
+			"path": "./packs/core-rules",
+			"type": "JournalEntry",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"TRUSTED": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "dsc-monster-features",
+			"label": "Monster Features",
+			"system": "draw-steel",
+			"path": "./packs/monster-features",
+			"type": "Item",
+			"ownership": {
+				"PLAYER": "NONE",
+				"TRUSTED": "NONE",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "dsc-monsters",
+			"label": "Monsters",
+			"system": "draw-steel",
+			"path": "./packs/monsters",
+			"type": "Actor",
+			"ownership": {
+				"PLAYER": "NONE",
+				"TRUSTED": "NONE",
+				"ASSISTANT": "OWNER"
+			}
+		}
+	],
+	"packFolders": [
+		{
+			"name": "Draw Steel Content",
+			"color": "#ff0000",
+			"sorting": "m",
+			"packs": ["dsc-core-rules"],
+			"folders": [
+				{
+					"name": "Monsters",
+					"sorting": "m",
+					"color": "#ff2020",
+					"packs": ["dsc-monster-features", "dsc-monsters"]
+					
+				}
+			]
+		}
+	]
 }
