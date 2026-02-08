@@ -12,7 +12,7 @@
 	"media": [
 		{
 			"type": "setup",
-			"url": "modules/ds-content/images/draw-steel-heroes-cover.webp",
+			"url": "modules/ds-content/images/draw-steel-heroes-cover-2.webp",
 			"loop": false,
 			"flags": {}
 		}
@@ -62,6 +62,30 @@
 				"TRUSTED": "NONE",
 				"ASSISTANT": "OWNER"
 			}
+		},
+		{
+			"name": "dsc-rules-reference",
+			"label": "Rules Reference",
+			"system": "draw-steel",
+			"path": "./packs/rules-reference",
+			"type": "JournalEntry",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"TRUSTED": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "dsc-pregen",
+			"label": "Pregenerated Characters",
+			"system": "draw-steel",
+			"path": "./packs/pregenerated-characters",
+			"type": "Actor",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"TRUSTED": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
 		}
 	],
 	"packFolders": [
@@ -69,7 +93,7 @@
 			"name": "Draw Steel Content",
 			"color": "#ff0000",
 			"sorting": "m",
-			"packs": ["dsc-core-rules"],
+			"packs": ["dsc-core-rules", "dsc-pregen", "dsc-rules-reference"],
 			"folders": [
 				{
 					"name": "Monsters",
