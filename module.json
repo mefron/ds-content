@@ -21,10 +21,15 @@
 		"minimum": "0.6.5",
 		"verified": "13"
 	},
+
 	"url": "https://github.com/mefron/ds-content",
 	"bugs": "https://github.com/mefron/ds-content/issues",
 	"manifest": "https://github.com/mefron/ds-content/releases/download/latest/module.json",
 	"download": "https://github.com/mefron/ds-content/releases/download/v0.0.7/ds-content-v0.0.7.zip",
+
+	"esmodules": [
+		"scripts/hello-world.js"
+	],
 
 	"packs": [
 		{
