@@ -2,7 +2,7 @@
 	"id": "ds-content",
 	"title": "Draw Steel Content",
 	"description": "Personal Draw Steel Content",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"authors": [
 		{
 			"name": "mefron",
@@ -25,7 +25,7 @@
 	"url": "https://github.com/mefron/ds-content",
 	"bugs": "https://github.com/mefron/ds-content/issues",
 	"manifest": "https://github.com/mefron/ds-content/releases/download/latest/module.json",
-	"download": "https://github.com/mefron/ds-content/releases/download/v0.0.7/ds-content-v0.0.7.zip",
+	"download": "https://github.com/mefron/ds-content/releases/download/v0.0.8/ds-content-v0.0.8.zip",
 
 	"esmodules": [
 		"scripts/hello-world.js"
